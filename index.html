@@ -5,8 +5,10 @@
   <title>Redirecting...</title>
   <script>
     (function(){
-      var links=["https://example1.com","https://example2.com","https://example3.com"];
-      window.location.replace(links[Math.floor(Math.random()*links.length)]);
+      // Array now contains only two links
+      var links = ["https://example1.com", "https://example2.com"];
+      // Randomly choose one (0 or 1)
+      window.location.replace( links[Math.floor(Math.random() * links.length)] );
     })();
   </script>
   <noscript>
